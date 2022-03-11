@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.box-container{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+}
+.Titulo{
+    background-color: brown;
+    text-align: center;
+}
+.Lista-todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista_itens{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+input[type=text]{
+    width: 400px;
+    height: 30px;
+    text-align: center;
+}
+
+
