@@ -3,36 +3,65 @@
     padding: 0;
     margin: 0;
 }
-.box-container{
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 .container{
     border: 1px solid black;
-    width: 400px;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
 }
 .Titulo{
-    background-color: brown;
-    text-align: center;
+    background-color: rgb(66, 217, 228);
+    color: white;
+    text-align: start;
+    font-size: 22px;
 }
 .Lista-todo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .lista_itens{
     display: flex;
-    align-items: center;
-    width: 400px;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    height: 50px;
+    background-color: aqua;
+    margin: 2px;
+    border-radius: 6px;
+    overflow: hidden;
 }
 input[type=text]{
-    width: 400px;
+    width: 100vw;
     height: 30px;
     text-align: center;
 }
-
+input[type=button], input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+@media (max-width: 1000px)
+{
+    .Lista-todo{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 850px)
+{
+    .Lista-todo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 700px)
+{
+    .Lista-todo{
+        margin-left: 17vw ;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
